@@ -1,0 +1,36 @@
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: -200% center;
+  }
+}
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 1.8rem;
+  left: clamp(1.9rem, 2.2vw, 0.65rem);
+  right: clamp(1.9rem, 2.2vw, 0.65rem);
+  z-index: 100;
+}
+
+.header-text {
+  font-size: clamp(0.65rem, 2.2vw, 0.65rem);
+  font-weight: 400;
+  letter-spacing: -0.03rem;
+  line-height: clamp(1.95rem, 3.2vw, 6rem);
+
+  color: var(--white);
+  cursor: pointer;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.8rem;
+  /* margin-right: 2rem; */
+}

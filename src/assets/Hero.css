@@ -1,0 +1,36 @@
+.hero {
+  height: 100vh;
+}
+
+.borders {
+  position: relative;
+  z-index: 10;
+}
+
+.heroContainer {
+  position: relative;
+  height: 100vh;
+  border-radius: 28px;
+  border: 14px solid var(--bg);
+  outline: 15px solid var(--bg);
+  outline-offset: -1px;
+}
+
+.heroContainer h1 {
+  font-size: clamp(1.33rem, 2.2vw, 6rem);
+  font-weight: 400;
+  letter-spacing: -0.05rem;
+  line-height: clamp(1.95rem, 3.2vw, 6rem);
+
+  width: clamp(0rem, 70vw, 48rem);
+  color: var(--white);
+
+  /* absolutely centered */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 6;
+  transition: all 0.2s;
+  user-select: none;
+}

@@ -1,0 +1,93 @@
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+    background: var(--pink);
+    transform: translateX(150px);
+  }
+
+  50% {
+    scale: 1 1.5;
+    background: var(--blue);
+    transform: translateX(150px);
+  }
+
+  to {
+    rotate: 360deg;
+    background: var(--pink);
+    transform: translateX(150px);
+  }
+}
+
+@keyframes rotate2 {
+  from {
+    rotate: 0deg;
+    background: var(--blue);
+  }
+
+  50% {
+    scale: 1 1.5;
+    background: var(--pink);
+  }
+
+  to {
+    rotate: 360deg;
+    background: var(--blue);
+  }
+}
+
+#blob {
+  height: 30vmax;
+  aspect-ratio: 1;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  translate: -35% -35%;
+  /* border-radius: 50%; */
+  background: var(--pink);
+  animation: rotate 16s infinite;
+  opacity: 0.8;
+  transition: all 0.2s;
+  z-index: 2;
+}
+
+#blob2 {
+  height: 30vmax;
+  aspect-ratio: 1;
+  position: fixed;
+  left: 10%;
+  top: 10%;
+  translate: -65% -65%;
+  border-radius: 50%;
+  background: var(--blue);
+  animation: rotate2 16s infinite;
+  opacity: 0.8;
+  transition: all 0.2s;
+  z-index: 2;
+}
+
+#blur {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backdrop-filter: blur(6vmax);
+  z-index: 2;
+}
+
+@media screen and (max-width: 1439px) {
+  #blob {
+    height: 40vmax;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    translate: -35% -35%;
+    scale: 1.8;
+  }
+  #blob2 {
+    height: 40vmax;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    translate: -65% -65%;
+    scale: 1.8;
+  }
+}
