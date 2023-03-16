@@ -1,30 +1,21 @@
 export const useHoverableOpacity = () => {
 
-     let isMobile = window.matchMedia("only screen and (min-width: 1000px)").matches;
-     // Hoverable opacity will work on screens bigger than 1000px
+     const hoverables = document.querySelectorAll('.hoverable-opacity');
 
-     if (isMobile) {
+     // Gets each hoverable
+     hoverables.forEach((hoverable) => {
 
-          const hoverables = document.querySelectorAll('.hoverable-opacity');
+          // hoverable.onmouseover = () => {
+          const letters = hoverable.textContent.split('');
 
-          // Gets each hoverable
-          hoverables.forEach((hoverable) => {
+          hoverable.textContent = '';
 
-               // hoverable.onmouseover = () => {
-               const letters = hoverable.textContent.split('');
-
-               hoverable.textContent = '';
-
-               letters.forEach((letter, index) => {
-                    const span = document.createElement('span');
-                    span.textContent = letter;
-                    span.style.animationDelay = `${index * 50}ms`;
-                    span.classList.add('animate-opacity'); // add animate-opacity class
-                    hoverable.append(span);
-               });
-               // }
-
+          letters.forEach((letter, index) => {
+               const span = document.createElement('span');
+               span.textContent = letter;
+               span.style.animationDelay = `${index * 50}ms`;
+               span.classList.add('animate-opacity'); // add animate-opacity class
+               hoverable.append(span);
           });
-
-     }
+     });
 }

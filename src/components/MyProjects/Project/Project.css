@@ -1,0 +1,46 @@
+.content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  translate: -50% -50%;
+  width: clamp(0rem, 80vw, 48rem);
+}
+
+.project-container h1 {
+  font-size: clamp(1.7rem, 3vw, 5rem);
+  letter-spacing: -0.03rem;
+  color: var(--white);
+  user-select: none;
+  width: clamp(0rem, 41vw, 20rem);
+
+  word-wrap: break-word;
+  white-space: break-spaces;
+
+  /* border: 2px solid red; */
+}
+
+.project-container p {
+  margin-top: 16px;
+  font-size: clamp(0.7rem, 2.2vw, 0.65rem);
+  color: var(--white);
+  font-weight: 400;
+  letter-spacing: -0.02rem;
+  line-height: clamp(1rem, 3.2vw, 1rem);
+  width: clamp(0rem, 40vw, 20rem);
+
+  /* border: 2px solid red; */
+}
+
+.project-image {
+  background-color: var(--gray);
+  background-size: cover;
+
+  width: clamp(0rem, 60vw, 8rem);
+  height: clamp(0rem, 60vw, 11rem);
+
+  border-radius: 10px;
+}

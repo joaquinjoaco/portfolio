@@ -7,6 +7,8 @@ import './assets/Hero.css';
 import './components/ContactBtn/ContactBtn.css';
 import './components/Header/Header.css';
 import './components/MyProjectsCTA/MyProjectsCTA.css';
+import './components/MyProjects/MyProjects.css';
+import './components/MyProjects/Project/Project.css';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

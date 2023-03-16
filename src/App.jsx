@@ -1,16 +1,23 @@
 import { useEffect } from 'react';
-import ContactBtn from './components/ContactBtn/ContactBtn';
-import MouseTrailer from './components/MouseTrailer/MouseTrailer';
 import { useMouseTrailer } from './components/MouseTrailer/useMouseTrailer';
-import Header from './components/Header/Header';
 import { useHoverableOpacity } from './hooks/useHoverableOpacity';
+import { useHoverableTitleOpacity } from './hooks/useHoverableTitleOpacity';
+
+import Header from './components/Header/Header';
+import MouseTrailer from './components/MouseTrailer/MouseTrailer';
+import ContactBtn from './components/ContactBtn/ContactBtn';
 import MyProjectsCTA from './components/MyProjectsCTA/MyProjectsCTA';
+import MyProjects from './components/MyProjects/MyProjects';
 
 function App() {
 
   useEffect(() => {
-    useMouseTrailer();
-    useHoverableOpacity();
+    let isMobile = window.matchMedia("only screen and (min-width: 1000px)").matches;
+    if (isMobile) {
+      useMouseTrailer();
+      useHoverableOpacity();
+      useHoverableTitleOpacity();
+    }
   }, []);
 
   return (
@@ -35,9 +42,7 @@ function App() {
       </div>
 
       {/* Projects */}
-      <div className="container outside" id="projects">
-        <h1 className="hoverable-opacity">Boberwatch</h1>
-      </div>
+      <MyProjects />
       <div className="container outside">
         <h1 className="hoverable-opacity">Boberwatch</h1>
       </div>

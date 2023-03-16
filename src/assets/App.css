@@ -39,6 +39,16 @@ body {
   position: relative;
 }
 
+.container h1 {
+  font-size: clamp(3rem, 5vw, 10rem);
+  color: var(--white);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  z-index: 3;
+}
+
 .outside {
   z-index: 3;
   background-color: var(--bg);
@@ -50,16 +60,6 @@ body {
 
 .white {
   background-color: #ffffff;
-}
-
-.container h1 {
-  font-size: clamp(3rem, 5vw, 10rem);
-  color: var(--white);
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  translate: -50% -50%;
-  z-index: 3;
 }
 
 /* hoverable opacity */
@@ -80,4 +80,15 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+.hoverable-title-opacity {
+  cursor: default;
+}
+
+.hoverable-title-opacity span {
+  transition: all 1s;
+}
+.hoverable-title-opacity:hover span {
+  transition: all 0.2s;
 }
