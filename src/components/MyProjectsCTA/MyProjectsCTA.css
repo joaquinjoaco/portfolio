@@ -24,3 +24,11 @@
   color: var(--white);
   cursor: pointer;
 }
+
+/* desktop tweaks */
+@media screen and (min-width: 1440px) {
+  .cta-container {
+    left: clamp(5.6rem, 2.2vw, 0.65rem);
+    right: clamp(5.6rem, 2.2vw, 0.65rem);
+  }
+}

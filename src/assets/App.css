@@ -87,6 +87,7 @@ body {
 }
 
 .hoverable-title-opacity span {
+  display: inline-block;
   transition: all 1s;
 }
 .hoverable-title-opacity:hover span {

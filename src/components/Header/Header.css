@@ -33,3 +33,15 @@ header {
   justify-content: space-between;
   gap: 1.8rem;
 }
+
+/* desktop tweaks */
+@media screen and (min-width: 1440px) {
+  header {
+    left: clamp(5.6rem, 2.2vw, 0.65rem);
+    right: clamp(5.6rem, 2.2vw, 0.65rem);
+  }
+
+  .header-buttons {
+    gap: 3.2rem;
+  }
+}

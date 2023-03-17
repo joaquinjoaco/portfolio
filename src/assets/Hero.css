@@ -7,16 +7,17 @@
   z-index: 10;
 }
 
-.heroContainer {
+.hero-container {
   position: relative;
   height: 100vh;
   border-radius: 28px;
   border: 14px solid var(--bg);
   outline: 15px solid var(--bg);
   outline-offset: -1px;
+  z-index: 2;
 }
 
-.heroContainer h1 {
+.hero-container h1 {
   font-size: clamp(1.33rem, 2.2vw, 6rem);
   font-weight: 400;
   letter-spacing: -0.05rem;

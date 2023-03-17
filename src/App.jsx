@@ -30,7 +30,7 @@ function App() {
       <div className="hero inside">
         <MouseTrailer />
         <div className="borders">
-          <div className="heroContainer">
+          <div className="hero-container">
             <h1 className="interactable">Hello there! I'm Joaquín, and I specialize in front-end web development. With a keen eye for design, I enjoy crafting beautiful and interactive experiences that are both visually appealing and functional.
               <br />
               <br />
@@ -44,7 +44,7 @@ function App() {
       {/* Projects */}
       <MyProjects />
       <div className="container outside">
-        <h1 className="hoverable-opacity">Boberwatch</h1>
+        <h1 className="hoverable-opacity">So call me maybe?</h1>
       </div>
 
       {/* white container */}

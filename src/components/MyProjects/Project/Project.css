@@ -19,12 +19,12 @@
 
   word-wrap: break-word;
   white-space: break-spaces;
-
   /* border: 2px solid red; */
 }
 
-.project-container p {
+.project-desc {
   margin-top: 16px;
+  margin-bottom: 16px;
   font-size: clamp(0.7rem, 2.2vw, 0.65rem);
   color: var(--white);
   font-weight: 400;
@@ -33,6 +33,27 @@
   width: clamp(0rem, 40vw, 20rem);
 
   /* border: 2px solid red; */
+}
+
+.project-link {
+  font-size: clamp(0.7rem, 2.2vw, 0.65rem);
+  color: var(--gray);
+  font-weight: 500;
+  letter-spacing: -0.02rem;
+  line-height: clamp(1rem, 3.2vw, 1rem);
+  width: clamp(0rem, 40vw, 20rem);
+  padding-block: 16px;
+  transition: all 0.2s;
+  /* user-select: none; */
+  cursor: pointer;
+}
+
+.project-link:hover {
+  color: var(--white);
+  transition: all 0.2s;
+}
+.project-link:nth-child(4) {
+  margin-left: 16px;
 }
 
 .project-image {
