@@ -17,8 +17,8 @@
   user-select: none;
   width: clamp(0rem, 41vw, 20rem);
 
-  word-wrap: break-word;
-  white-space: break-spaces;
+  /* word-wrap: break-word; */
+  /* white-space: break-spaces; */
   /* border: 2px solid red; */
 }
 

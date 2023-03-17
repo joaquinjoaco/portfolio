@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Project({ name, desc, background }) {
+export default function Project({ name, desc, background, repo, link, isPrototype }) {
 
      return (
           <div className="project-container outside" id="projects">
@@ -8,8 +8,13 @@ export default function Project({ name, desc, background }) {
                     <div className="column">
                          <h1 className="hoverable-title-opacity">{name}</h1>
                          <p className="project-desc">{desc}</p>
-                         <a className="project-link hoverable-opacity">Live site</a>
-                         <a className="project-link hoverable-opacity">Repository</a>
+                         {isPrototype ?
+                              <a href={link} target="_blank" className="project-link hoverable-opacity">Figma prototype</a>
+                              :
+                              <a href={link} target="_blank" className="project-link hoverable-opacity">Live site</a>
+                         }
+
+                         <a href={repo} target="_blank" className="project-link hoverable-opacity">Repository</a>
                     </div>
                     <div className="column">
                          <div className="project-image" style={{ backgroundImage: "url(" + background + ")" }}></div>

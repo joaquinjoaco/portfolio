@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useMouseTrailer } from './components/MouseTrailer/useMouseTrailer';
 import { useHoverableOpacity } from './hooks/useHoverableOpacity';
 import { useHoverableTitleOpacity } from './hooks/useHoverableTitleOpacity';
@@ -10,6 +10,8 @@ import MyProjectsCTA from './components/MyProjectsCTA/MyProjectsCTA';
 import MyProjects from './components/MyProjects/MyProjects';
 
 function App() {
+
+  const [darkTheme, setDarkTheme] = useState(true);
 
   useEffect(() => {
     let isMobile = window.matchMedia("only screen and (min-width: 1000px)").matches;
@@ -24,7 +26,7 @@ function App() {
 
     <div className="App">
       {/* Header */}
-      <Header />
+      <Header darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
 
       {/* Hero */}
       <div className="hero inside">
@@ -45,11 +47,6 @@ function App() {
       <MyProjects />
       <div className="container outside">
         <h1 className="hoverable-opacity">So call me maybe?</h1>
-      </div>
-
-      {/* white container */}
-      <div className="container white" id="white">
-        <h1 className="interactable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, earum.</h1>
       </div>
 
     </div>

@@ -58,10 +58,6 @@ body {
   background-color: var(--bg);
 }
 
-.white {
-  background-color: #ffffff;
-}
-
 /* hoverable opacity */
 
 .hoverable-opacity:hover .animate-opacity,
@@ -87,7 +83,7 @@ body {
 }
 
 .hoverable-title-opacity span {
-  display: inline-block;
+  /* display: inline-block; */
   transition: all 1s;
 }
 .hoverable-title-opacity:hover span {

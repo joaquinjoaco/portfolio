@@ -34,6 +34,10 @@ header {
   gap: 1.8rem;
 }
 
+.header-buttons a {
+  text-decoration: none;
+}
+
 /* desktop tweaks */
 @media screen and (min-width: 1440px) {
   header {
