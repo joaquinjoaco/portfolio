@@ -1,0 +1,25 @@
+@media screen and (max-width: 1000px) {
+  #image-trailer {
+    display: none;
+  }
+}
+
+#image-trailer {
+  opacity: 0;
+  background-color: transparent;
+  background-size: cover;
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 10000;
+
+  pointer-events: none;
+  transition: opacity 500ms ease;
+
+  /* display: grid;
+  place-items: center; */
+}

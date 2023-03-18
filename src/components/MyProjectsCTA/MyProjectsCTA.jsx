@@ -24,8 +24,6 @@ export default function MyProjectsCTA() {
 
      // CTA scrolls to 1000px on click
      const scrollDown = () => {
-          // var element = document.getElementById('projects');
-          // element.scrollIntoView();
           window.scrollTo(0, 1000);
      }
 

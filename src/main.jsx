@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import './components/Preloader/Preloader.css';
 import './assets/App.css';
 import './components/MouseTrailer/MouseTrailer.css';
+import './components/MouseImageTrailer/MouseImageTrailer.css';
 import './assets/Hero.css';
 import './components/ContactBtn/ContactBtn.css';
 import './components/Header/Header.css';

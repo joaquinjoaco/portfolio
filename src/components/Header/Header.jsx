@@ -19,7 +19,7 @@ export default function Header({ darkTheme, setDarkTheme }) {
                     {/* resume link */}
                     <a href="/" target="_blank" className="header-text hoverable-opacity interactable">Resume</a>
                     {/* theme switch */}
-                    <div className="header-text hoverable-opacity interactable" onClick={() => switchTheme(darkTheme, setDarkTheme)}>{darkTheme ? "🌞" : "🌙"}</div>
+                    <div className="header-text interactable theme-switch" onClick={() => switchTheme(darkTheme, setDarkTheme)}>{darkTheme ? "🌞" : "🌙"}</div>
                </div>
 
           </header>

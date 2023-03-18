@@ -1,9 +1,13 @@
 import React from 'react'
+import MouseImageTrailer from '../MouseImageTrailer/MouseImageTrailer'
 import Project from './Project/Project'
 
 export default function MyProjects() {
      return (
           <div className="my-projects">
+
+               {/* Mouse Image Trailer */}
+               <MouseImageTrailer />
 
                {/* MiFicha */}
                <Project
@@ -13,16 +17,19 @@ export default function MyProjects() {
                     repo={"https://github.com/joaquinjoaco/ficha-medica"}
                     link={"https://www.figma.com/proto/3SFg9bdcpJPSaTUPAEBNPm/Ficha-m%C3%A9dica?node-id=93%3A248&scaling=min-zoom&page-id=65%3A292&starting-point-node-id=93%3A248"}
                     isPrototype={true}
+                    imageId={"mificha"}
                />
 
                {/* Laundrify CRUD */}
                <Project
                     name={"Laundrify CRUD"}
-                    desc={"CRUD React app with FireAuth (Google authentication) and Firebase for storing clients and orders."}
+                    desc={"CRUD React web app with FireAuth (Google authentication) and Firebase for storing clients and orders."}
                     background={"/src/assets/images/laundrify-crud.png"}
                     repo={"https://github.com/joaquinjoaco/laundrify-crud"}
                     link={"https://laundrifycrudtest.netlify.app/"}
                     isPrototype={false}
+                    imageId={"laundrifycrud"}
+
                />
 
                {/* sorvisLater */}
@@ -33,6 +40,7 @@ export default function MyProjects() {
                     repo={"https://github.com/joaquinjoaco/sorvisLater"}
                     link={"https://sorvislater.netlify.app/login"}
                     isPrototype={false}
+                    imageId={"sorvislater"}
                />
 
                {/* Eventyr Banlist */}
@@ -43,6 +51,7 @@ export default function MyProjects() {
                     repo={"https://github.com/joaquinjoaco/eventyrbanlist"}
                     link={"https://eventyrbanlistfirebaserealtime.netlify.app/"}
                     isPrototype={false}
+                    imageId={"eventyrbanlist"}
                />
 
                {/* Eventyr player guide */}
@@ -53,6 +62,7 @@ export default function MyProjects() {
                     repo={"https://github.com/joaquinjoaco/eventyr-player-guide-react"}
                     link={"https://guiaeventyr.netlify.app/"}
                     isPrototype={false}
+                    imageId={"eventyrplayerguide"}
                />
 
                {/* Bandicoot Informatic Team */}
@@ -63,6 +73,7 @@ export default function MyProjects() {
                     repo={"https://github.com/joaquinjoaco/bandicootproyecto"}
                     link={"https://bandicoot.netlify.app/"}
                     isPrototype={false}
+                    imageId={"bandicoot"}
                />
 
                {/* Laundrify website */}
@@ -73,6 +84,7 @@ export default function MyProjects() {
                     repo={"https://github.com/joaquinjoaco/lavanderia"}
                     link={"https://lavanderialaundrify.netlify.app/"}
                     isPrototype={false}
+                    imageId={"laundrifylanding"}
                />
 
                {/* La fisica segun dios */}
@@ -83,6 +95,7 @@ export default function MyProjects() {
                     repo={"https://github.com/joaquinjoaco/la-fisica-segun-dios-redesign"}
                     link={"https://lafisicasegundios.netlify.app/"}
                     isPrototype={false}
+                    imageId={"lafisicasegundios"}
                />
 
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useMouseTrailer } from './components/MouseTrailer/useMouseTrailer';
+import { useMouseTrailer } from './hooks/useMouseTrailer';
 import { useHoverableOpacity } from './hooks/useHoverableOpacity';
 import { useHoverableTitleOpacity } from './hooks/useHoverableTitleOpacity';
 
@@ -8,6 +8,8 @@ import MouseTrailer from './components/MouseTrailer/MouseTrailer';
 import ContactBtn from './components/ContactBtn/ContactBtn';
 import MyProjectsCTA from './components/MyProjectsCTA/MyProjectsCTA';
 import MyProjects from './components/MyProjects/MyProjects';
+import Preloader from './components/Preloader/Preloader';
+import { usePreloader } from './hooks/usePreloader';
 
 function App() {
 
@@ -25,6 +27,7 @@ function App() {
   return (
 
     <div className="App">
+      {/* <Preloader /> */}
       {/* Header */}
       <Header darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
 
@@ -45,8 +48,12 @@ function App() {
 
       {/* Projects */}
       <MyProjects />
+
+      {/* Goodbye */}
       <div className="container outside">
-        <h1 className="hoverable-opacity">So call me maybe?</h1>
+        <h1 className="looking-for-oportunities">Im looking for oportunities to learn and contribute in Uruguay, Montevideo or remote.
+          <p>Thank you for your visit!</p>
+        </h1>
       </div>
 
     </div>

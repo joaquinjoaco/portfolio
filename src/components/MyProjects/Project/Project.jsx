@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Project({ name, desc, background, repo, link, isPrototype }) {
+export default function Project({ name, desc, background, repo, link, isPrototype, imageId }) {
 
      return (
           <div className="project-container outside" id="projects">
@@ -17,9 +17,9 @@ export default function Project({ name, desc, background, repo, link, isPrototyp
                          <a href={repo} target="_blank" className="project-link hoverable-opacity">Repository</a>
                     </div>
                     <div className="column">
-                         <div className="project-image" style={{ backgroundImage: "url(" + background + ")" }}></div>
+                         <div className="project-image image-interactable" id={imageId} style={{ backgroundImage: "url(" + background + ")" }}></div>
                     </div>
                </div>
-          </div >
+          </div>
      )
 }
