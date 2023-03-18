@@ -8,8 +8,8 @@ import MouseTrailer from './components/MouseTrailer/MouseTrailer';
 import ContactBtn from './components/ContactBtn/ContactBtn';
 import MyProjectsCTA from './components/MyProjectsCTA/MyProjectsCTA';
 import MyProjects from './components/MyProjects/MyProjects';
-import Preloader from './components/Preloader/Preloader';
-import { usePreloader } from './hooks/usePreloader';
+// import Preloader from './components/Preloader/Preloader';
+// import { usePreloader } from './hooks/usePreloader';
 
 function App() {
 

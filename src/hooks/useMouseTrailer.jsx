@@ -51,49 +51,49 @@ export const useMouseTrailer = () => {
                const image = event.target.closest(".image-interactable").id;
                switch (image) {
                     case "mificha":
-                         imageTrailer.style.backgroundImage = `url('/src/assets/images/ficha-medica.png')`;
+                         imageTrailer.style.backgroundImage = `url('assets/images/ficha-medica.png')`;
                          imageTrailer.style.width = `230px`;
                          imageTrailer.style.height = `501px`;
                          break;
 
                     case "laundrifycrud":
-                         imageTrailer.style.backgroundImage = `url('/src/assets/images/laundrify-crud.png')`;
+                         imageTrailer.style.backgroundImage = `url('assets/images/laundrify-crud.png')`;
                          imageTrailer.style.width = `230px`;
                          imageTrailer.style.height = `501px`;
                          break;
 
                     case "sorvislater":
-                         imageTrailer.style.backgroundImage = `url('/src/assets/images/desktop/sorvisLater-desktop.png')`;
+                         imageTrailer.style.backgroundImage = `url('assets/images/desktop/sorvisLater-desktop.png')`;
                          imageTrailer.style.width = `600px`;
                          imageTrailer.style.height = `305px`;
                          break;
 
                     case "eventyrbanlist":
-                         imageTrailer.style.backgroundImage = `url('/src/assets/images/eventyr-banlist.png')`;
+                         imageTrailer.style.backgroundImage = `url('assets/images/eventyr-banlist.png')`;
                          imageTrailer.style.width = `230px`;
                          imageTrailer.style.height = `501px`;
                          break;
 
                     case "eventyrplayerguide":
-                         imageTrailer.style.backgroundImage = `url('/src/assets/images/desktop/eventyrguia-desktop.png')`;
+                         imageTrailer.style.backgroundImage = `url('assets/images/desktop/eventyrguia-desktop.png')`;
                          imageTrailer.style.width = `600px`;
                          imageTrailer.style.height = `300px`;
                          break;
 
                     case "bandicoot":
-                         imageTrailer.style.backgroundImage = `url('/src/assets/images/desktop/bandicoot-desktop.png')`;
+                         imageTrailer.style.backgroundImage = `url('assets/images/desktop/bandicoot-desktop.png')`;
                          imageTrailer.style.width = `600px`;
                          imageTrailer.style.height = `300px`;
                          break;
 
                     case "laundrifylanding":
-                         imageTrailer.style.backgroundImage = `url('/src/assets/images/desktop/laundrifylanding-desktop.png')`;
+                         imageTrailer.style.backgroundImage = `url('assets/images/desktop/laundrifylanding-desktop.png')`;
                          imageTrailer.style.width = `600px`;
                          imageTrailer.style.height = `300px`;
                          break;
 
                     case "lafisicasegundios":
-                         imageTrailer.style.backgroundImage = `url('/src/assets/images/desktop/lafisicasegundios-desktop.png')`;
+                         imageTrailer.style.backgroundImage = `url('assets/images/desktop/lafisicasegundios-desktop.png')`;
                          imageTrailer.style.width = `600px`;
                          imageTrailer.style.height = `300px`;
                          break;
