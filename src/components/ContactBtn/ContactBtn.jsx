@@ -7,7 +7,7 @@ export default function ContactBtn() {
 
      return (
           <CopyToClipboard text="joaquingomezleites@gmail.com">
-               <div className="contact-btn"
+               <a href="mailto:joaquingomezleites@gmail.com" className="contact-btn"
                     onClick={() => {
                          setText("Mail copied");
                          setTimeout(() => {
@@ -20,7 +20,7 @@ export default function ContactBtn() {
                     <p id="text">Get in touch</p>
                     <p id="text2">{text}</p>
                     <span className="underline"></span>
-               </div>
+               </a>
           </CopyToClipboard>
      )
 }

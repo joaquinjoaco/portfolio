@@ -80,6 +80,11 @@ body {
   text-decoration: none;
 }
 
+.container .email-container {
+  color: var(--white);
+  text-decoration: none;
+}
+
 .container .about-me-link img {
   padding: 6px;
   background-color: #111111;

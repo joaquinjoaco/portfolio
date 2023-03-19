@@ -39,7 +39,7 @@ export default function About() {
                     {/* email */}
                     <div className="email-container">
                          <CopyToClipboard text="joaquingomezleites@gmail.com">
-                              <div className="contact-btn"
+                              <a href="mailto:joaquingomezleites@gmail.com" className="contact-btn"
                                    onClick={() => {
                                         setText("Mail copied");
                                         setTimeout(() => {
@@ -51,7 +51,7 @@ export default function About() {
                                    <p id="text">Email</p>
                                    <p id="text2">{text}</p>
                                    <span className="underline"></span>
-                              </div>
+                              </a>
                          </CopyToClipboard>
                     </div>
 
