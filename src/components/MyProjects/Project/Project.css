@@ -1,7 +1,6 @@
 .project-container {
   height: 45vh;
   position: relative;
-  /* border: 2px solid red; */
 }
 
 .content-container {
@@ -22,10 +21,6 @@
   color: var(--white);
   user-select: none;
   width: clamp(0rem, 41vw, 20rem);
-
-  /* word-wrap: break-word; */
-  /* white-space: break-spaces; */
-  /* border: 2px solid red; */
 }
 
 .project-desc {
@@ -37,8 +32,6 @@
   letter-spacing: -0.02rem;
   line-height: clamp(1rem, 3.2vw, 1rem);
   width: clamp(0rem, 40vw, 20rem);
-
-  /* border: 2px solid red; */
 }
 
 .project-link {
@@ -50,7 +43,6 @@
   width: clamp(0rem, 40vw, 20rem);
   padding-block: 16px;
   transition: all 0.2s;
-  /* user-select: none; */
   cursor: pointer;
 }
 

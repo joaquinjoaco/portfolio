@@ -57,6 +57,38 @@ body {
   color: var(--white);
 }
 
+.container .about-me-h1 {
+  font-size: clamp(2.2rem, 5vw, 10rem);
+}
+.container .about-me-p {
+  margin-top: 0.8rem;
+  font-size: clamp(0.7rem, 2.2vw, 0.65rem);
+  color: var(--white);
+  font-weight: 400;
+  letter-spacing: -0.02rem;
+  line-height: clamp(1.2rem, 3.2vw, 1rem);
+  width: clamp(0rem, 80vw, 48rem);
+}
+
+.container .about-me-link {
+  margin-top: 0.8rem;
+  font-size: clamp(1.15rem, 2.2vw, 1.15rem);
+  color: var(--white);
+  font-weight: 400;
+  letter-spacing: -0.02rem;
+  line-height: clamp(1.2rem, 3.2vw, 1rem);
+  text-decoration: none;
+}
+
+.container .about-me-link img {
+  padding: 6px;
+  background-color: #111111;
+  border-radius: 10px;
+}
+#secondImage {
+  margin-left: 8px;
+}
+
 .outside {
   z-index: 3;
   background-color: var(--bg);

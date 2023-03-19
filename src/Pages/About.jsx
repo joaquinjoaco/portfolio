@@ -1,7 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
+import CopyToClipboard from 'react-copy-to-clipboard';
 import { useHoverableOpacity } from '../hooks/useHoverableOpacity';
 
 export default function About() {
+
+     const [text, setText] = useState("Copy mail?");
+
 
      useEffect(() => {
           let isNotMobile = window.matchMedia("only screen and (min-width: 1000px)").matches;
@@ -13,8 +17,44 @@ export default function About() {
 
      return (
           <div className="container outside">
-               <h1 className="looking-for-oportunities">Im looking for oportunities to learn and contribute in Uruguay, Montevideo or remote.
-                    <p>Thank you for your visit!</p>
+               <h1 className="about-me-h1">About me
+                    <p className="about-me-p">I graduated from Technological Secondary Education in Computer Science. I'm currently pursuing a technical degree in such field.
+                         <br />
+                         One of the things I love about this industry is the opportunity to be creative and come up with new ideas, especially when collaborating with others.
+                         <br />
+                         Over the past two years, I've been self-educating myself in React and front-end development. I'm currently working with a range of technologies, including React/React Native, JavaScript, Firebase, Github, and Figma.
+                         <br />
+                         In the past, I've also worked with VueJS, Angular, MySQL, Linux, Visual Basic .NET, and Java.
+                    </p>
+
+                    {/* linkedin */}
+                    <a href="https://www.linkedin.com/in/joaquingomezleites/" target="_blank" className="about-me-link">
+                         <img src="assets/Linkedin.svg" alt="LinkedIn" />
+                    </a>
+                    {/* github */}
+                    <a href="https://github.com/joaquinjoaco" target="_blank" className="about-me-link" id="secondImage">
+                         <img src="assets/Github.svg" alt="GitHub" />
+                    </a>
+
+                    {/* email */}
+                    <div className="email-container">
+                         <CopyToClipboard text="joaquingomezleites@gmail.com">
+                              <div className="contact-btn"
+                                   onClick={() => {
+                                        setText("Mail copied");
+                                        setTimeout(() => {
+                                             setText("Copy mail?");
+                                        }, 2500);
+                                   }}
+                                   onMouseLeave={() => setText("Copy mail?")}
+                              >
+                                   <p id="text">Email</p>
+                                   <p id="text2">{text}</p>
+                                   <span className="underline"></span>
+                              </div>
+                         </CopyToClipboard>
+                    </div>
+
                </h1>
           </div>
      )

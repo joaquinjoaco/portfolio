@@ -1,17 +1,20 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { switchTheme } from '../../hooks/SwitchTheme';
 
 export default function Header({ darkTheme, setDarkTheme }) {
 
      return (
           <header>
-
-               <Link to="/portfolio/" className="header-text hoverable-opacity interactable">Joaquín Gómez</Link>
+               {/* header-text hoverable-opacity interactable */}
+               <NavLink to="/portfolio/" className="header-text hoverable-opacity interactable">Joaquín Gómez</NavLink>
                <div className="header-buttons">
                     {/* about link */}
-                    <Link to="/portfolio/about" className="header-text hoverable-opacity interactable">About</Link>
+                    <NavLink to="/portfolio/about"
+                         className={({ isActive, isPending }) =>
+                              isPending ? "header-text hoverable-opacity interactable pending" : isActive ? "header-text hoverable-opacity interactable active" : "header-text hoverable-opacity interactable"}
+                    >About</NavLink>
                     {/* resume link */}
                     <a href="https://drive.google.com/file/d/1z3wG_oBuzhRWHJNweGId3dgk9AtOx8xK/view?usp=sharing" target="_blank" className="header-text hoverable-opacity interactable">Resume</a>
                     {/* theme switch */}

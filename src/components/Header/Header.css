@@ -36,6 +36,12 @@ header {
 
 .header-buttons a {
   text-decoration: none;
+  transition: all 0.2s;
+}
+
+.header-buttons a.active {
+  font-weight: 700;
+  transition: all 0.2s;
 }
 
 /* desktop tweaks */
