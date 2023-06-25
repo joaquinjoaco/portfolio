@@ -6,7 +6,7 @@ export const switchTheme = (darkTheme, setDarkTheme) => {
           // light theme
           root.style.setProperty('--white', '#111111');
           root.style.setProperty('--bg', '#fff6e5');
-          root.style.setProperty('--gray', '#afada6');
+          root.style.setProperty('--gray', '#92908b');
           setDarkTheme(false);
           root.animate([
                { opacity: 0.1 },

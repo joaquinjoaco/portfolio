@@ -29,6 +29,21 @@ body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: var(--bg);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--white);
+}
+
 .App {
   position: relative;
 }

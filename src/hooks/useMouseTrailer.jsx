@@ -50,6 +50,11 @@ export const useMouseTrailer = () => {
                // true 
                const image = event.target.closest(".image-interactable").id;
                switch (image) {
+                    case "quitel":
+                         imageTrailer.style.backgroundImage = `url('assets/images/desktop/quitel-desktop.png')`;
+                         imageTrailer.style.width = `600px`;
+                         imageTrailer.style.height = `296px`;
+                         break;
                     case "mificha":
                          imageTrailer.style.backgroundImage = `url('assets/images/ficha-medica.png')`;
                          imageTrailer.style.width = `230px`;

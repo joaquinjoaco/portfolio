@@ -48,7 +48,7 @@ export default function About() {
                                    }}
                                    onMouseLeave={() => setText("Copy mail?")}
                               >
-                                   <p id="text">Email</p>
+                                   <p id="text">joaquingomezleites@gmail.com</p>
                                    <p id="text2">{text}</p>
                                    <span className="underline"></span>
                               </a>

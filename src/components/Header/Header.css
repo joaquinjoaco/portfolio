@@ -19,7 +19,7 @@ header {
 }
 
 .header-text {
-  font-size: clamp(0.65rem, 2.2vw, 0.65rem);
+  font-size: clamp(0.75rem, 2.2vw, 0.75rem);
   font-weight: 400;
   letter-spacing: -0.03rem;
   line-height: clamp(1.95rem, 3.2vw, 6rem);
@@ -49,6 +49,10 @@ header {
   header {
     left: clamp(5.6rem, 2.2vw, 0.65rem);
     right: clamp(5.6rem, 2.2vw, 0.65rem);
+  }
+
+  .header-text {
+    font-size: clamp(0.65rem, 2.2vw, 0.65rem);
   }
 
   .header-buttons {

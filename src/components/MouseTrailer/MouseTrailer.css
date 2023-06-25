@@ -73,21 +73,22 @@
   z-index: 2;
 }
 
-@media screen and (max-width: 1439px) {
+/* "Small devices" */
+@media screen and (orientation: portrait) and (max-width: 1439px) {
   #blob {
     height: 40vmax;
     position: fixed;
     left: 50%;
     top: 50%;
-    translate: -35% -35%;
-    scale: 1.8;
+    translate: -20% -20%;
+    scale: 3;
   }
   #blob2 {
     height: 40vmax;
     position: fixed;
     left: 50%;
     top: 50%;
-    translate: -65% -65%;
-    scale: 1.8;
+    translate: -80% -65%;
+    scale: 3;
   }
 }

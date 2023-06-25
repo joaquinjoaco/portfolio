@@ -11,8 +11,19 @@ export default function MyProjects() {
 
                {/* MiFicha */}
                <Project
+                    name={"Quitel"}
+                    desc={"XLVI International Congress of Theoretical Chemists of Latin Expression. Made with Vite + React. Live site available (with functionality removed). Freelance project."}
+                    background={"assets/images/quitel.png"}
+                    repo={"https://github.com/joaquinjoaco/quitel-showcase"}
+                    link={"https://quitelcongress-showcase.netlify.app"}
+                    isPrototype={false}
+                    imageId={"quitel"}
+               />
+
+               {/* MiFicha */}
+               <Project
                     name={"MiFicha"}
-                    desc={"React Native app currently in development, to store the medical record of an individual and be able to access it from other devices by scanning a QR code."}
+                    desc={"React Native app, intended to store the medical record of an individual and be able to access it from other devices by scanning a QR code."}
                     background={"assets/images/ficha-medica.png"}
                     repo={"https://github.com/joaquinjoaco/ficha-medica"}
                     link={"https://www.figma.com/proto/3SFg9bdcpJPSaTUPAEBNPm/Ficha-m%C3%A9dica?node-id=93%3A248&scaling=min-zoom&page-id=65%3A292&starting-point-node-id=93%3A248"}
@@ -23,7 +34,7 @@ export default function MyProjects() {
                {/* Laundrify CRUD */}
                <Project
                     name={"Laundrify CRUD"}
-                    desc={"CRUD React web app with FireAuth (Google authentication) and Firebase for storing clients and orders."}
+                    desc={"CRUD React web app with FireAuth (Google authentication) and Firebase for storing clients and orders from a laundromat."}
                     background={"assets/images/laundrify-crud.png"}
                     repo={"https://github.com/joaquinjoaco/laundrify-crud"}
                     link={"https://laundrifycrudtest.netlify.app/"}
