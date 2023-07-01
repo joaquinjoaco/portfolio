@@ -10,6 +10,29 @@ export const useMouseTrailer = () => {
      // Image trailer
      const imageTrailer = document.getElementById("image-trailer");
 
+     // blobs opacity is set to 0 when currentPosition > 500
+     window.addEventListener('scroll', function () {
+          var currentPosition = window.scrollY;
+
+          if (currentPosition > 500) {
+               // element.style.display = 'none';
+               blob.animate({
+                    opacity: 0,
+               }, { duration: 2000, fill: "forwards" });
+               blob2.animate({
+                    opacity: 0,
+               }, { duration: 2000, fill: "forwards" });
+          } else {
+               // element.style.display = 'block';
+               blob.animate({
+                    opacity: 1,
+               }, { duration: 1000, fill: "forwards" });
+               blob2.animate({
+                    opacity: 1,
+               }, { duration: 1000, fill: "forwards" });
+          }
+     });
+
      // listening for mouse movement on window 
      window.onpointermove = event => {
           const { clientX, clientY } = event;
