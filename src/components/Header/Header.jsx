@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { NavLink } from 'react-router-dom';
-import { switchTheme } from '../../hooks/SwitchTheme';
+import { switchTheme } from '../../functions/SwitchTheme';
 
 export default function Header({ darkTheme, setDarkTheme }) {
 

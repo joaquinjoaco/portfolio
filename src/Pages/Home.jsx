@@ -4,9 +4,9 @@ import ContactBtn from '../components/ContactBtn/ContactBtn';
 import MyProjectsCTA from '../components/MyProjectsCTA/MyProjectsCTA';
 import MyProjects from '../components/MyProjects/MyProjects';
 
-import { useMouseTrailer } from '../hooks/useMouseTrailer';
-import { useHoverableOpacity } from '../hooks/useHoverableOpacity';
-import { useHoverableTitleOpacity } from '../hooks/useHoverableTitleOpacity';
+import { useMouseTrailer } from '../functions/useMouseTrailer';
+import { useHoverableOpacity } from '../functions/useHoverableOpacity';
+import { useHoverableTitleOpacity } from '../functions/useHoverableTitleOpacity';
 
 
 export default function Home() {

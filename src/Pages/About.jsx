@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import CopyToClipboard from 'react-copy-to-clipboard';
-import { useHoverableOpacity } from '../hooks/useHoverableOpacity';
+import { useHoverableOpacity } from '../functions/useHoverableOpacity';
 
 export default function About() {
 
@@ -22,7 +22,9 @@ export default function About() {
                          <br />
                          One of the things I love about this industry is the opportunity to be creative and come up with new ideas, especially when collaborating with others.
                          <br />
-                         Over the past two years, I've been self-educating myself in React and front-end development. I'm currently working with a range of technologies, including React/React Native, JavaScript, Firebase, Github, and Figma.
+                         And over the past two years, I've been self-educating myself in the fields of front-end development and both User Experience and User Interface design.
+                         <br />
+                         I'm currently working with a range of technologies, including React/React Native, JavaScript, Firebase, Github, and Figma.
                          <br />
                          In the past, I've also worked with VueJS, Angular, MySQL, Linux, Visual Basic .NET, and Java.
                     </p>
