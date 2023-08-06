@@ -41,9 +41,10 @@ export const useMouseTrailer = () => {
           }
 
           imageTrailer.animate(
-               { transform: `translate(${clientX - 600}px, ${clientY}px)`, },
+               { transform: `translate(${clientX - 500}px, ${clientY}px)`, },
                { duration: 800, fill: "forwards" }
           );
+
 
           // shows the image when interacting with an element that has the class "image-interactable"
           if (imageInteracting) {

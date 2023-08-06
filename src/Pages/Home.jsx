@@ -12,7 +12,7 @@ import { useHoverableTitleOpacity } from '../functions/useHoverableTitleOpacity'
 export default function Home() {
 
      useEffect(() => {
-          let isNotMobile = window.matchMedia("only screen and (min-width: 1000px)").matches;
+          const isNotMobile = window.matchMedia("only screen and (min-width: 1000px)").matches;
           if (isNotMobile) {
                useMouseTrailer();
                useHoverableOpacity();

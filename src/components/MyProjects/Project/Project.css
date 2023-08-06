@@ -62,12 +62,32 @@
   height: clamp(0rem, 60vw, 11rem);
 
   border-radius: 10px;
+  position: relative;
 }
 
 /* "Bigger devices" */
 @media screen and (min-width: 1439px) {
   .project-desc,
   .project-link {
+    font-size: clamp(0.7rem, 2.2vw, 0.65rem);
+  }
+}
+
+@media screen and (min-width: 1439px) and (min-height: 765px) {
+  #quitel::after {
+    content: "hover me!";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    rotate: 12deg;
+    top: -75px;
+    height: 100px;
+    width: 100px;
+    margin-left: 6rem;
+    color: var(--white);
+    background: url("/arrow.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
     font-size: clamp(0.7rem, 2.2vw, 0.65rem);
   }
 }
