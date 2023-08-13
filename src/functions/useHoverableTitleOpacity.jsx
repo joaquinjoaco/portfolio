@@ -1,4 +1,3 @@
-
 export const useHoverableTitleOpacity = () => {
      const texts = document.querySelectorAll('.hoverable-title-opacity');
 

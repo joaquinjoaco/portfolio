@@ -24,12 +24,12 @@ export default function MyProjectsCTA() {
 
      // CTA scrolls to 1000px on click
      const scrollDown = () => {
-          window.scrollTo(0, 1000);
+          window.scrollTo(0, 800);
      }
 
 
      return (
-          <div className="cta-container" id="ctaContainer">
+          <div className="cta-container interactable" id="ctaContainer">
                <div className="projects-cta" onClick={() => scrollDown()}>
                     <p>
                          <span className="animate-opacity" style={{ animationDelay: "0ms" }}>M</span>

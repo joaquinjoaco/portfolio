@@ -7,7 +7,7 @@ export default function ContactBtn() {
 
      return (
           <CopyToClipboard text="joaquingomezleites@gmail.com">
-               <a href="mailto:joaquingomezleites@gmail.com" className="contact-btn"
+               <a href="mailto:joaquingomezleites@gmail.com" className="contact-btn interactable"
                     onClick={() => {
                          setText("Mail copied");
                          setTimeout(() => {

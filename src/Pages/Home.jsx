@@ -28,7 +28,7 @@ export default function Home() {
                     <MouseTrailer />
                     <div className="borders">
                          <div className="hero-container">
-                              <h1 className="interactable">Hello there! I'm Joaquín, and I specialize in front-end web development. With a keen eye for design, I craft engaging, functional and visually appealing user experiences.
+                              <h1>Hello there! I'm Joaquín, and I specialize in front-end web development. With a keen eye for design, I craft engaging, functional and visually appealing user experiences.
                                    <br />
                                    <br />
                                    <ContactBtn />
