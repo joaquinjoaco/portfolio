@@ -42,7 +42,7 @@
   left: 50%;
   top: 50%;
   translate: -35% -35%;
-  /* border-radius: 50%; */
+  border-radius: 50%;
   background: var(--pink);
   animation: rotate 16s infinite;
   opacity: 0.8;
@@ -70,6 +70,7 @@
   width: 100%;
   position: absolute;
   backdrop-filter: blur(6vmax);
+  -webkit-backdrop-filter: blur(6vmax);
   z-index: 2;
 }
 
