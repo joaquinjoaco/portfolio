@@ -17,7 +17,7 @@ export default function Home() {
                useMouseTrailer();
                useHoverableOpacity();
                useHoverableTitleOpacity();
-               console.log("useeffect ran")
+               // console.log("useeffect ran");
           }
      }, []);
 

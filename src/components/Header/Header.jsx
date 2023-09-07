@@ -14,7 +14,7 @@ export default function Header({ darkTheme, setDarkTheme }) {
                     <NavLink to="/portfolio/about"
                          className={({ isActive, isPending }) =>
                               isPending ? "header-text hoverable-opacity interactable pending" : isActive ? "header-text hoverable-opacity interactable active" : "header-text hoverable-opacity interactable"}
-                    >About</NavLink>
+                    >About me</NavLink>
                     {/* resume link */}
                     <a href="https://drive.google.com/file/d/1z3wG_oBuzhRWHJNweGId3dgk9AtOx8xK/view?usp=sharing" target="_blank" className="header-text hoverable-opacity interactable">Resume</a>
                     {/* theme switch */}

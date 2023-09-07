@@ -11,7 +11,7 @@ export default function About() {
           let isNotMobile = window.matchMedia("only screen and (min-width: 1000px)").matches;
           if (isNotMobile) {
                useHoverableOpacity();
-               console.log("useeffect ran")
+               // console.log("useeffect ran")
           }
      }, []);
 
