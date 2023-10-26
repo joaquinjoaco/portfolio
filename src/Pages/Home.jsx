@@ -43,7 +43,8 @@ export default function Home() {
 
                {/* Goodbye */}
                <div className="container outside">
-                    <h1 className="looking-for-oportunities">Im looking for oportunities to learn and contribute in Uruguay, Montevideo or remote.
+                    <h1 className="looking-for-oportunities">
+                         {/* Im looking for oportunities to learn and contribute in Uruguay, Montevideo or remote. */}
                          <p>Thank you for your visit!</p>
                     </h1>
                </div>
