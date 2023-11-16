@@ -1,5 +1,5 @@
 .hero {
-  height: 100vh;
+  height: 100svh;
 }
 
 .borders {
@@ -9,7 +9,7 @@
 
 .hero-container {
   position: relative;
-  height: 100vh;
+  height: 100svh;
   border-radius: 28px;
   border: 14px solid var(--bg);
   outline: 15px solid var(--bg);
