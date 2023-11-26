@@ -22,11 +22,11 @@ export default function About() {
                          <br />
                          One of the things I love about this industry is the opportunity to be creative and come up with new ideas, especially when collaborating with others.
                          <br />
-                         And over the past two years, I've been self-educating myself in the fields of front-end development and both User Experience and User Interface design.
+                         Over the past two years, I've been self-educating myself in the fields of front-end development and both User Experience and User Interface design.
                          <br />
                          I'm currently working with a range of technologies, including React/React Native, JavaScript, Firebase, Github, and Figma.
                          <br />
-                         In the past, I've also worked with VueJS, Angular, MySQL, Linux, Visual Basic .NET, and Java.
+                         In the past, I've also used VueJS, Angular, PostgreSQL, MySQL, VB .NET, Java and C/C++.
                     </p>
 
                     {/* linkedin */}
