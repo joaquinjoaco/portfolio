@@ -14,7 +14,11 @@ export default function Project({ name, desc, background, repo, link, isPrototyp
                               <a href={link} target="_blank" className="project-link hoverable-opacity">Live site</a>
                          }
 
-                         <a href={repo} target="_blank" className="project-link hoverable-opacity">Repository</a>
+                         {repo === "private" ?
+                              <a className="project-link hoverable-opacity">Private repo</a>
+                              :
+                              <a href={repo} target="_blank" className="project-link hoverable-opacity">Repository</a>
+                         }
                     </div>
                     <div className="column">
                          <div className="project-image image-interactable" id={imageId} style={{ backgroundImage: "url(" + background + ")" }}></div>

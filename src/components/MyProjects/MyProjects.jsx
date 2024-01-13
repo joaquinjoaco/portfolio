@@ -9,7 +9,29 @@ export default function MyProjects() {
                {/* Mouse Image Trailer */}
                <MouseImageTrailer />
 
-               {/* MiFicha */}
+               {/* Ecommerce */}
+               <Project
+                    name={"Ecommerce store"}
+                    desc={"Sports store currently in development. Made with NextJS 14, Typescript, MercadoPago, Tailwind, HeadlessUI for some components, Zustand, and Zod."}
+                    background={"assets/images/store.PNG"}
+                    repo={"private"}
+                    link={"https://quitelcongress-showcase.netlify.app"}
+                    isPrototype={false}
+                    imageId={"store"}
+               />
+
+               {/* Ecommerce admin */}
+               <Project
+                    name={"Ecommerce admin"}
+                    desc={"Currently in development. Ecommerce admin panel. Manage all content from here and get the corresponding API routes. Made with NextJS 14, Typescript, Clerk auth, Tailwind, Shadcn, Prisma, MySQL, and Zod."}
+                    background={"assets/images/admin.PNG"}
+                    repo={"private"}
+                    link={"https://quitelcongress-showcase.netlify.app"}
+                    isPrototype={false}
+                    imageId={"admin"}
+               />
+
+               {/* Quitel */}
                <Project
                     name={"Quitel"}
                     desc={"XLVI International Congress of Theoretical Chemists of Latin Expression. Made with Vite + React. Live site available (with functionality removed). Freelance project."}

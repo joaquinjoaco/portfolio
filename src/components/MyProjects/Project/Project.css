@@ -74,7 +74,7 @@
 }
 
 @media screen and (min-width: 1439px) and (min-height: 765px) {
-  #quitel::after {
+  #store::after {
     content: "hover me!";
     position: absolute;
     display: flex;

@@ -24,9 +24,11 @@ export default function About() {
                          <br />
                          Over the past two years, I've been self-educating myself in the fields of front-end development and both User Experience and User Interface design.
                          <br />
-                         I'm currently working with a range of technologies, including React/React Native, JavaScript, Firebase, Github, and Figma.
+                         I'm currently working with a range of technologies such as NextJS,
+                         React / React Native, Javascript, Typescript, C/C++, HTML, CSS, MySQL, PostgreSQL, Prisma,
+                         Firebase, Github, Figma.
                          <br />
-                         In the past, I've also used VueJS, Angular, PostgreSQL, MySQL, VB .NET, Java and C/C++.
+                         In the past, I've also used VueJS, Angular, VB .NET, and Java.
                     </p>
 
                     {/* linkedin */}
