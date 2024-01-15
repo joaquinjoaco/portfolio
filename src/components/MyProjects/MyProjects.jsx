@@ -15,7 +15,7 @@ export default function MyProjects() {
                     desc={"Sports store currently in development. Made with NextJS 14, Typescript, MercadoPago, Tailwind, HeadlessUI for some components, Zustand, and Zod."}
                     background={"assets/images/store.PNG"}
                     repo={"private"}
-                    link={"https://quitelcongress-showcase.netlify.app"}
+                    link={"https://ecommerce-store-ten-sandy.vercel.app/"}
                     isPrototype={false}
                     imageId={"store"}
                />
@@ -26,7 +26,7 @@ export default function MyProjects() {
                     desc={"Currently in development. Ecommerce admin panel. Manage all content from here and get the corresponding API routes. Made with NextJS 14, Typescript, Clerk auth, Tailwind, Shadcn, Prisma, MySQL, and Zod."}
                     background={"assets/images/admin.PNG"}
                     repo={"private"}
-                    link={"https://quitelcongress-showcase.netlify.app"}
+                    link={"https://ecommerce-admin-five-gamma.vercel.app/"}
                     isPrototype={false}
                     imageId={"admin"}
                />
